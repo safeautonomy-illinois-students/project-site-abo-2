@@ -32,7 +32,7 @@ A catchy one-line description of your project
 
 [[{{< fa file-pdf >}} Paper]{.btn-text}](https://arxiv.org/pdf/XXXX.XXXXX){.btn .btn-primary}
 [[{{< fa brands arxiv >}} arXiv]{.btn-text}](https://arxiv.org/abs/XXXX.XXXXX){.btn .btn-primary}
-[[{{< fa video >}} Video]{.btn-text}](https://youtube.com/){.btn .btn-primary}
+[[{{< fa video >}} Video]{.btn-text}](https://www.youtube.com/watch?v=cSQTZoZPJzs){.btn .btn-primary}
 [[{{< fa brands github >}} Code]{.btn-text}](https://github.com/){.btn .btn-primary}
 [[{{< fa database >}} Data]{.btn-text}](https://example.com){.btn .btn-primary}
 
@@ -95,7 +95,7 @@ approach outperforms existing methods by [metric improvement] while requiring
 
 ::: {.video-container}
 <!-- Replace with your YouTube or local video embed -->
-{{< video https://www.youtube.com/embed/dQw4w9WgXcQ >}}
+{{< video https://www.youtube.com/embed/cSQTZoZPJzs >}}
 :::
 
 :::
