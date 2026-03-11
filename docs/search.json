@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Your Project Title Here",
     "section": "",
-    "text": "A catchy one-line description of your project\n\n\nAuthor One1, Author Two2, Author Three1,2\n\n\n1University Name, 2Research Lab / Company\n\n\n Paper  arXiv  Video  Code  Data"
+    "text": "A catchy one-line description of your project\n\n\nAditya Korlahalli1, Gokul Narayan1, Ishaan Kandamuri1 Shyam Peden1\n\n\n1University of Illinois Urbana-Champaign\n\n\n Paper  arXiv  Video  Code  Data"
   },
   {
     "objectID": "index.html#abstract",
     "href": "index.html#abstract",
     "title": "Your Project Title Here",
     "section": "Abstract",
-    "text": "Abstract\n\nReplace this text with your project abstract. Describe the problem you are solving, the key insight or contribution of your work, and the main results. Keep it concise — typically 150–250 words. You can use bold and italic formatting to emphasize key terms.\nFor example: We present a novel approach to [task] that achieves state-of-the-art results on [benchmark]. Our method leverages [key technique] to overcome [limitation of prior work]. Experiments demonstrate that our approach outperforms existing methods by [metric improvement] while requiring [efficiency gain]."
+    "text": "Abstract\n\nReplace this text with your project abstract. Describe the problem you are solving, the key insight or contribution of your work, and the main results. Keep it concise — typically 150–250 words. You can use bold and italic formatting to emphasize key terms.\nFor example: We present a novel approach to [task] that achieves state-of-the-art results on [benchmark]. Our method leverages [key technique] to overcome [limitation of prior work]. Experiments demonstrate that our approach outperforms existing methods by [metric improvement] while requiring [efficiency gain].\nWe will be working on a full-scale autonomous vehicle, the Polaris GEM e2. Using this car and what we have learned throughout the semester, we plan on implementing several features. The first feature is the most obvious: have the car stay in the lanes. Whether the car is on a straight or a turn, the car must stay in the lane to ensure proper functionality. We also want our car to be able to detect obstacles on the road. This all relates to us wanting to generate an autonomous car that potentially could drive on a real road. If the car detects a stop sign, we want our car to stop for a certain amount of time to simulate what a car should do in the real world. Similarly, we want the car to stop in an emergency if an obstacle is detected in the car’s path. One final feature that we think would be smart to implement is that the car can park by itself. We want the car to be able to detect parking lines, and once it finds an empty spot, we can program the car to park itself."
   },
   {
     "objectID": "index.html#video",
