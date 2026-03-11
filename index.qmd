@@ -8,7 +8,7 @@ format:
 
 ::: {.hero-section}
 
-# Your Project Title Here {.title}
+# Autonomous Navigation for the Polaris GEM e2 {.title}
 
 ::: {.subtitle}
 A catchy one-line description of your project
