@@ -16,15 +16,16 @@ A catchy one-line description of your project
 
 ::: {.author-list}
 
-[**Author One**](https://example.com)^1^,
-[**Author Two**](https://example.com)^2^,
-[**Author Three**](https://example.com)^1,2^
+[**Aditya Korlahalli**](https://example.com)^1^,
+[**Gokul Narayan**](https://example.com)^1^,
+[**Ishaan Kandamuri**](https://example.com)^1^
+[**Shyam Peden**](https://example.com)^1^
 
 :::
 
 ::: {.affiliation-list}
 
-^1^University Name,  ^2^Research Lab / Company
+^1^University of Illinois Urbana-Champaign
 
 :::
 
