@@ -228,10 +228,10 @@ Check out [this survey](https://example.com) for a comprehensive overview of the
 ## BibTeX {.section-title}
 
 ```bibtex
-@article{yourname2026project,
-  author    = {Author One and Author Two and Author Three},
-  title     = {Your Project Title Here},
-  journal   = {Conference or Journal Name},
+@article{AutonomousNavigationPolarisGEMe2,
+  author    = {Aditya Korlahalli and Gokul Narayan and Ishaan Kandamuri and Shyam Peden},
+  title     = {Autonomous Navigation for the Polaris GEM e2},
+  journal   = {ECE 484 Final Project},
   year      = {2026},
 }
 ```
