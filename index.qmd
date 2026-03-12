@@ -11,7 +11,7 @@ format:
 # Autonomous Navigation for the Polaris GEM e2 {.title}
 
 ::: {.subtitle}
-Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.
+A catchy one-line description of your project
 :::
 
 ::: {.author-list}
@@ -31,11 +31,8 @@ Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.
 
 ::: {.button-row}
 
-[[{{< fa file-pdf >}} Paper]{.btn-text}](https://arxiv.org/pdf/XXXX.XXXXX){.btn .btn-primary}
-[[{{< fa brands arxiv >}} arXiv]{.btn-text}](https://arxiv.org/abs/XXXX.XXXXX){.btn .btn-primary}
+
 [[{{< fa video >}} Video]{.btn-text}](https://www.youtube.com/watch?v=cSQTZoZPJzs){.btn .btn-primary}
-[[{{< fa brands github >}} Code]{.btn-text}](https://github.com/){.btn .btn-primary}
-[[{{< fa database >}} Data]{.btn-text}](https://example.com){.btn .btn-primary}
 
 :::
 
@@ -51,7 +48,7 @@ Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.
 ::: {.hero-teaser}
 
 <!-- Option A: Use a static image as the teaser -->
-![Teaser figure showing your method overview or key result.](static/images/placeholder-teaser.svg){.teaser-img}
+![GEM car that we will be programming](static/images/gem.png){.teaser-img}
 
 <!-- Option B: Embed a video teaser (uncomment below, comment out image above)
 {{< video static/videos/teaser.mp4 >}}
@@ -105,118 +102,11 @@ This is just a part of what we want to implement as it is the first step. With t
 ## Results {.section-title}
 
 ::: {.content-text}
-Provide a brief description of the results shown below. Explain what the
-reader should observe and why it matters.
-:::
-
-::: {.results-grid}
-
-::: {.result-card}
-![Result 1 caption](static/images/placeholder-result1.svg)
-:::
-
-::: {.result-card}
-![Result 2 caption](static/images/placeholder-result2.svg)
-:::
-
-::: {.result-card}
-![Result 3 caption](static/images/placeholder-result3.svg)
-:::
-
-:::
+We want the car to be able to parallel park itself. If succesful, it will be able to recognize a parking space and safely park itself in between two "cars". We also were thinking about just using some visual aid to mark a hypothetical car since it is not very possible to have two cars on top of the car we are programming.
 
 :::
 
 
-<!-- ============================================================ -->
-<!-- QUALITATIVE COMPARISONS -->
-<!-- ============================================================ -->
-
-::: {.section-container}
-
-## Qualitative Comparisons {.section-title}
-
-::: {.content-text}
-Describe the comparison setup — which baselines are you comparing against, and
-what should the reader look for in the side-by-side results.
-:::
-
-::: {.comparison-grid}
-
-::: {.comparison-item}
-![Ours](static/images/placeholder-ours.svg)
-
-**Ours**
-:::
-
-::: {.comparison-item}
-![Baseline A](static/images/placeholder-baseline.svg)
-
-**Baseline A**
-:::
-
-:::
-
-:::
-
-
-<!-- ============================================================ -->
-<!-- INTERACTIVE SLIDER (Optional) -->
-<!-- ============================================================ -->
-
-::: {.section-container}
-
-## Interpolation Demo {.section-title}
-
-::: {.content-text}
-If your method supports interpolation or continuous control, you can add an
-interactive slider here. The example below shows how to set one up.
-:::
-
-::: {.interpolation-panel}
-
-::: {.interpolation-endpoints}
-![Start](static/images/placeholder-start.svg){.endpoint-img}
-
-![End](static/images/placeholder-end.svg){.endpoint-img}
-:::
-
-<input type="range" min="0" max="100" value="50" class="interpolation-slider" id="interpolation-slider">
-<div id="interpolation-value" class="interpolation-value">50%</div>
-
-<script>
-  const slider = document.getElementById('interpolation-slider');
-  const display = document.getElementById('interpolation-value');
-  slider.addEventListener('input', function() {
-    display.textContent = this.value + '%';
-  });
-</script>
-
-:::
-
-:::
-
-
-<!-- ============================================================ -->
-<!-- RELATED WORK -->
-<!-- ============================================================ -->
-
-::: {.section-container}
-
-## Related Work {.section-title}
-
-::: {.content-text}
-
-Here are some related works in this area:
-
-- [Related Paper 1](https://example.com) introduces an idea similar to ours for [topic].
-- [Related Paper 2](https://example.com) also addresses [problem] using [approach].
-- [Related Paper 3](https://example.com) proposes [technique] which is complementary to our method.
-
-Check out [this survey](https://example.com) for a comprehensive overview of the field.
-:::
-
-:::
 
 
 <!-- ============================================================ -->
