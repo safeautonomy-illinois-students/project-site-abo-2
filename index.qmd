@@ -71,19 +71,9 @@ A catchy one-line description of your project
 ## Abstract {.section-title}
 
 ::: {.abstract-text}
-Replace this text with your project abstract. Describe the problem you are
-solving, the key insight or contribution of your work, and the main results.
-Keep it concise — typically 150–250 words. You can use **bold** and *italic*
-formatting to emphasize key terms.
+We will be working on a full-scale autonomous vehicle, the Polaris GEM e2. Using this car and what we have learned throughout the semester, we plan on implementing several features. The first feature is the most obvious: **have the car stay in the lanes**. Whether the car is on a straight or a turn, the car must stay in the lane to ensure proper functionality. We also want our car to be able to **detect obstacles on the road**. This all relates to us wanting to generate an autonomous car that potentially could drive on a real road. If the car detects a stop sign, we want our car to stop for a certain amount of time to simulate what a car should do in the real world. Similarly, we want the car to stop in an emergency if an obstacle is detected in the car’s path. 
 
-For example: We present a novel approach to [task] that achieves
-state-of-the-art results on [benchmark]. Our method leverages [key technique]
-to overcome [limitation of prior work]. Experiments demonstrate that our
-approach outperforms existing methods by [metric improvement] while requiring
-[efficiency gain].
-
-We will be working on a full-scale autonomous vehicle, the Polaris GEM e2. Using this car and what we have learned throughout the semester, we plan on implementing several features. The first feature is the most obvious: **have the car stay in the lanes**. Whether the car is on a straight or a turn, the car must stay in the lane to ensure proper functionality. We also want our car to be able to **detect obstacles on the road**. This all relates to us wanting to generate an autonomous car that potentially could drive on a real road. If the car detects a stop sign, we want our car to stop for a certain amount of time to simulate what a car should do in the real world. Similarly, we want the car to stop in an emergency if an obstacle is detected in the car’s path. One final feature that we think would be smart to implement is that the car **can park by itself**. We want the car to be able to detect parking lines, and once it finds an empty spot, we can program the car to park itself.
-
+One final feature that we think would be difficult, but interesting to implement, is that the car **can park by itself**. We want the car to be able to detect parking lines, and once it finds an empty spot, we can program the car to park itself. An additional level of execution would be adding **parallel parking** to the car. We think this is doable as we can use the cameras to determine how to drive the car into a parallel park. Parallel parking involves parking vertically between two cars. We could potentially use something to mark where the driver’s side of the first car is. The camera can pick up where this is and then line up to it. From there, we can have the car reverse until one of the cameras picks up both headlights of the “back car”. Then, the car can change the steering and finally finish the parallel parking. This would be difficult, but we think that it is doable. 
 :::
 
 
@@ -97,9 +87,12 @@ We will be working on a full-scale autonomous vehicle, the Polaris GEM e2. Using
 
 ::: {.video-container}
 <!-- Replace with your YouTube or local video embed -->
-{{< video https://www.youtube.com/embed/cSQTZoZPJzs >}}
+{{< video static/videos/lane_detection.mov >}}
 :::
 
+:::
+As you can see in the video, the car recognizes which lane that it is in. The yellow line points to the middle of the lane that it is in, and if the car is in between lanes, it points to the lane boundary.
+This is just a part of what we want to implement as it is the first step. With the ability to detect lanes and make decisions accordingly, we can progress to potentially even parking the car. 
 :::
 
 
