@@ -11,7 +11,7 @@ format:
 # Autonomous Navigation for the Polaris GEM e2 {.title}
 
 ::: {.subtitle}
-A catchy one-line description of your project
+Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.
 :::
 
 ::: {.author-list}
