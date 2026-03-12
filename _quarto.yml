@@ -1,12 +1,9 @@
 project:
   type: website
   output-dir: docs
-  resources:
-    - static/images/
-  
 
 website:
-  title: "Autonomous Navigation for the Polaris GEM e2"
+  title: "Project Title"
   navbar:
     background: light
     left:
@@ -14,7 +11,6 @@ website:
         menu:
           - text: "Schedule and Guidlines"
             href: https://safeautonomy-illinois.github.io/ece484-site/spring-2026/projects/robotaxi/
-
 
 format:
   html:
