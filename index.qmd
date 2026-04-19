@@ -75,6 +75,24 @@ One final feature that we think would be difficult, but interesting to implement
 
 
 <!-- ============================================================ -->
+<!-- BLOCK DIAGRAM -->
+<!-- ============================================================ -->
+
+::: {.section-container}
+
+## Block Diagram {.section-title}
+
+::: {.video-container}
+<!-- Block Diagram Image -->
+![GEM car that we will be programming](static/images/gem.png){.teaser-img}
+:::
+
+:::
+Above is our block diagram that we plan on implementing. As you can see, the car will get the inputs from the sensors figuring out where the lanes are. This is to ensure that the car can run the program and follow itself in the lanes.
+The next thing is to check for any people or stop signs. We plan on doing this by detecting large differences in the image from the original trained image. That way, we can detect any kind of human that is very close to the car and the car can stop.
+:::
+
+<!-- ============================================================ -->
 <!-- OVERVIEW / METHOD VIDEO -->
 <!-- ============================================================ -->
 
