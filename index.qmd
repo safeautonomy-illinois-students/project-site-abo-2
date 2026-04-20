@@ -84,12 +84,15 @@ One final feature that we think would be difficult, but interesting to implement
 
 ::: {.video-container}
 <!-- Block Diagram Image -->
-![Block Diagram for Abo GEM car](static/images/gem.png){.teaser-img}
+![Block Diagram for Abo GEM car](static/images/block_digram.jpeg){.blockdiagram-img}
 :::
 
 :::
-Above is our block diagram that we plan on implementing. As you can see, the car will get the inputs from the sensors figuring out where the lanes are. This is to ensure that the car can run the program and follow itself in the lanes.
-The next thing is to check for any people or stop signs. We plan on doing this by detecting large differences in the image from the original trained image. That way, we can detect any kind of human that is very close to the car and the car can stop.
+Above is our block diagram that we plan on implementing. Using the cameras and sensors on the car, we will get our needed information to pass into the computer.
+Once we have this, our program will run considering the values and send information to help with the car's decision making process. For example, we want to follow inside the lanes.
+So, we want to make a decision to speed or slow down, and turn the steering wheel a certain way based on where in the lane we are.
+Finally, we will adjust the speed of the car, turn the wheel if needed, and update the current position.
+
 :::
 
 <!-- ============================================================ -->
@@ -98,7 +101,7 @@ The next thing is to check for any people or stop signs. We plan on doing this b
 
 ::: {.section-container}
 
-## Video {.section-title}
+## Video of Lane Detection {.section-title}
 
 ::: {.video-container}
 <!-- Replace with your YouTube or local video embed -->
@@ -106,21 +109,23 @@ The next thing is to check for any people or stop signs. We plan on doing this b
 :::
 
 :::
-As you can see in the video, the car recognizes which lane that it is in. The yellow line points to the middle of the lane that it is in, and if the car is in between lanes, it points to the lane boundary.
-This is just a part of what we want to implement as it is the first step. With the ability to detect lanes and make decisions accordingly, we can progress to potentially even parking the car. 
+In this video, we are running the lane detection on the information we received from the rosbag. We drove the car to collect this information around the track, put it in a flashdrive, and tested it in the simulation.
+The issue that we came across was that it was very noisy, which could pose an issue in the future for the controller. So, we think that we might have to design our controller not completely relying on where the lanes go because it could result in a faulty controller.
+
 :::
 
 
 <!-- ============================================================ -->
-<!-- RESULTS GALLERY -->
+<!-- NEXT STEPS -->
 <!-- ============================================================ -->
 
 ::: {.section-container}
 
-## Results {.section-title}
+## Next Steps {.section-title}
 
 ::: {.content-text}
-We want the car to be able to parallel park itself. If succesful, it will be able to recognize a parking space and safely park itself in between two "cars". We also were thinking about just using some visual aid to mark a hypothetical car since it is not very possible to have two cars on top of the car we are programming.
+After getting the lane following complete, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle.
+The final step after this would be to recognize stop signs, pedestrians, and other potential obstacles. 
 
 :::
 
