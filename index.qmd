@@ -84,7 +84,7 @@ One final feature that we think would be difficult, but interesting to implement
 
 ::: {.video-container}
 <!-- Block Diagram Image -->
-![Block Diagram for Abo GEM car](static/images/block_digram.png){.block_diagram-img}
+![Block Diagram for Abo GEM car](static/images/block_diagram.png){.block_diagram-img}
 :::
 
 :::
