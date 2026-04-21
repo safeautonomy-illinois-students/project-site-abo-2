@@ -15,56 +15,29 @@ Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.
 :::
 
 ::: {.author-list}
-
 [**Aditya Korlahalli**](https://example.com)^1^,
 [**Gokul Narayan**](https://example.com)^1^,
-[**Ishaan Kandamuri**](https://example.com)^1^
+[**Ishaan Kandamuri**](https://example.com)^1^,
 [**Shyam Peden**](https://example.com)^1^
-
 :::
 
 ::: {.affiliation-list}
-
 ^1^University of Illinois Urbana-Champaign
-
 :::
 
 ::: {.button-row}
-
-
-[[{{< fa video >}} Video]{.btn-text}](https://www.youtube.com/watch?v=cSQTZoZPJzs){.btn .btn-primary}
-
+[{{< fa video >}} Video](https://www.youtube.com/watch?v=cSQTZoZPJzs){.btn .btn-primary}
 :::
 
 :::
-
-
-<!-- ============================================================ -->
-<!-- TEASER IMAGE / VIDEO -->
-<!-- ============================================================ -->
 
 ::: {.section-container}
-
 ::: {.hero-teaser}
-
-<!-- Option A: Use a static image as the teaser -->
 ![GEM car that we will be programming](static/images/gem.png){.teaser-img}
-
-<!-- Option B: Embed a video teaser (uncomment below, comment out image above)
-{{< video static/videos/teaser.mp4 >}}
--->
-
 :::
-
 :::
-
-
-<!-- ============================================================ -->
-<!-- ABSTRACT -->
-<!-- ============================================================ -->
 
 ::: {.section-container}
-
 ## Abstract {.section-title}
 
 ::: {.abstract-text}
@@ -72,100 +45,57 @@ We will be working on a full-scale autonomous vehicle, the Polaris GEM e2. Using
 
 One final feature that we think would be difficult, but interesting to implement, is that the car **can park by itself**. We want the car to be able to detect parking lines, and once it finds an empty spot, we can program the car to park itself. An additional level of execution would be adding **parallel parking** to the car. We think this is doable as we can use the cameras to determine how to drive the car into a parallel park. Parallel parking involves parking vertically between two cars. We could potentially use something to mark where the driver’s side of the first car is. The camera can pick up where this is and then line up to it. From there, we can have the car reverse until one of the cameras picks up both headlights of the “back car”. Then, the car can change the steering and finally finish the parallel parking. This would be difficult, but we think that it is doable. 
 :::
-
-
-<!-- ============================================================ -->
-<!-- BLOCK DIAGRAM -->
-<!-- ============================================================ -->
+:::
 
 ::: {.section-container}
-
 ## Block Diagram {.section-title}
 
 ::: {.result-card}
-<!-- Block Diagram Image -->
-![Block Diagram for Abo Implementation on GEM e2](static/images/block_diagram.png){.block_diagram-img}
+![Block Diagram for Implementation on GEM e2](static/images/block_diagram.png){.block_diagram-img}
 :::
 
+::: {.content-text}
+Above is our block diagram that we plan on implementing. Using the cameras and sensors on the car, we will get our needed information to pass into the computer. Once we have this, our program will run considering the values and send information to help with the car's decision-making process. For example, we want to follow inside the lanes. So, we want to make a decision to speed or slow down, and turn the steering wheel a certain way based on where in the lane we are. Finally, we will adjust the speed of the car, turn the wheel if needed, and update the current position.
 :::
-Above is our block diagram that we plan on implementing. Using the cameras and sensors on the car, we will get our needed information to pass into the computer.
-Once we have this, our program will run considering the values and send information to help with the car's decision making process. For example, we want to follow inside the lanes.
-So, we want to make a decision to speed or slow down, and turn the steering wheel a certain way based on where in the lane we are.
-Finally, we will adjust the speed of the car, turn the wheel if needed, and update the current position.
-
 :::
-
-<!-- ============================================================ -->
-<!-- OVERVIEW / METHOD VIDEO -->
-<!-- ============================================================ -->
 
 ::: {.section-container}
-
 ## Video of Lane Detection {.section-title}
 
 ::: {.video-container}
-<!-- Replace with your YouTube or local video embed -->
 {{< video static/videos/lane_detection.mov >}}
-
 :::
 
+::: {.content-text}
+In this video, we are running the lane detection on the information we received from the rosbag. We drove the car to collect this information around the track, put it in a flash drive, and tested it in the simulation. The issue that we came across was that it was very noisy, which could pose an issue in the future for the controller. So, we think that we might have to design our controller not completely relying on where the lanes go because it could result in a faulty controller.
 :::
-In this video, we are running the lane detection on the information we received from the rosbag. We drove the car to collect this information around the track, put it in a flashdrive, and tested it in the simulation.
-The issue that we came across was that it was very noisy, which could pose an issue in the future for the controller. So, we think that we might have to design our controller not completely relying on where the lanes go because it could result in a faulty controller.
+:::
 
-:::
-
-:::
+::: {.section-container}
 ## Rosbag Replay from IRL Driving {.section-title}
 
 ::: {.video-container}
-<!-- Replace with your YouTube or local video embed -->
 {{< video static/videos/rosbagvideo_front_cam.mov >}}
-
 :::
 
-:::
-
-
+::: {.content-text}
 Here is the IRL driving replay from our Rosbag.
-
-
 :::
 
 ::: {.result-card}
-<!-- GPS, LIDAR Scan, and other cameras-->
 ![Image from all sensors and cameras on GEM e2](static/images/camera_views.png){.camera_views-img}
 :::
-
-
-
 :::
 
-
-
-<!-- ============================================================ -->
-<!-- NEXT STEPS -->
-<!-- ============================================================ -->
-
 ::: {.section-container}
-
 ## Next Steps {.section-title}
 
 ::: {.content-text}
-After completing the IRL lane following for the GEM e2, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle.
-The final step after this would be to recognize stop signs, pedestrians, and other potential obstacles. 
-
+After completing the IRL lane following for the GEM e2, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle. The final step after this would be to recognize stop signs, pedestrians, and other potential obstacles. 
+:::
 :::
 
-
-
-
-<!-- ============================================================ -->
-<!-- BIBTEX -->
-<!-- ============================================================ -->
-
 ::: {.section-container}
-
 ## BibTeX {.section-title}
 
 ```bibtex
@@ -175,19 +105,3 @@ The final step after this would be to recognize stop signs, pedestrians, and oth
   journal   = {ECE 484 Final Project},
   year      = {2026},
 }
-```
-
-:::
-
-
-<!-- ============================================================ -->
-<!-- FOOTER -->
-<!-- ============================================================ -->
-
-::: {.site-footer}
-
-This website template is adapted from the
-[Nerfies](https://nerfies.github.io) project page, which is licensed under a
-[Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
-
-:::
