@@ -47,6 +47,12 @@ One final feature that we think would be difficult, but interesting to implement
 :::
 :::
 
+<!-- ============================================================ -->
+
+<!-- BLOCK DIAGRAM -->
+
+<!-- ============================================================ -->
+
 ::: {.section-container}
 ## Block Diagram {.section-title}
 
@@ -58,6 +64,12 @@ One final feature that we think would be difficult, but interesting to implement
 Above is our block diagram that we plan on implementing. Using the cameras and sensors on the car, we will get our needed information to pass into the computer. Once we have this, our program will run considering the values and send information to help with the car's decision-making process. For example, we want to follow inside the lanes. So, we want to make a decision to speed or slow down, and turn the steering wheel a certain way based on where in the lane we are. Finally, we will adjust the speed of the car, turn the wheel if needed, and update the current position.
 :::
 :::
+
+<!-- ============================================================ -->
+
+<!-- OVERVIEW / METHOD VIDEO -->
+
+<!-- ============================================================ -->
 
 ::: {.section-container}
 ## Video of Lane Detection {.section-title}
@@ -87,6 +99,13 @@ Here is the IRL driving replay from our Rosbag.
 :::
 :::
 
+<!-- ============================================================ -->
+
+<!-- NEXT STEPS -->
+
+<!-- ============================================================ -->
+
+
 ::: {.section-container}
 ## Next Steps {.section-title}
 
@@ -94,6 +113,13 @@ Here is the IRL driving replay from our Rosbag.
 After completing the IRL lane following for the GEM e2, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle. The final step after this would be to recognize stop signs, pedestrians, and other potential obstacles. 
 :::
 :::
+
+<!-- ============================================================ -->
+
+<!-- BIBTEX -->
+
+<!-- ============================================================ -->
+
 
 ::: {.section-container}
 ## BibTeX {.section-title}
@@ -105,3 +131,25 @@ After completing the IRL lane following for the GEM e2, our next step would be t
   journal   = {ECE 484 Final Project},
   year      = {2026},
 }
+```
+
+<!-- ============================================================ -->
+
+<!-- FOOTER -->
+
+<!-- ============================================================ -->
+
+
+::: {.site-footer}
+
+
+
+This website template is adapted from the
+
+[Nerfies](https://nerfies.github.io) project page, which is licensed under a
+
+[Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+
+
+:::
