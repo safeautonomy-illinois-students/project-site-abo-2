@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Autonomous Navigation for the Polaris GEM e2</title>
+<title>Autonomous Navigation for the Polaris GEM e2 – Project Title</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -132,17 +132,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-more-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">More Research</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-more-research">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
         <li>
-    <a class="dropdown-item" href="https://example.com">
- <span class="dropdown-text">Project 1</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="https://example.com">
- <span class="dropdown-text">Project 2</span></a>
+    <a class="dropdown-item" href="https://safeautonomy-illinois.github.io/ece484-site/spring-2026/projects/robotaxi/">
+ <span class="dropdown-text">Schedule and Guidlines</span></a>
   </li>  
     </ul>
   </li>
@@ -164,7 +160,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="your-project-title-here" class="level1 title hero-section">
+<section id="autonomous-navigation-for-the-polaris-gem-e2" class="level1 title hero-section">
 <h1 class="title">Autonomous Navigation for the Polaris GEM e2</h1>
 <div class="subtitle">
 <p>Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.</p>
@@ -176,7 +172,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><sup>1</sup>University of Illinois Urbana-Champaign</p>
 </div>
 <div class="button-row">
-<p><a href="https://arxiv.org/pdf/XXXX.XXXXX" class="btn btn-primary"><span class="btn-text"><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> Paper</span></a> <a href="https://arxiv.org/abs/XXXX.XXXXX" class="btn btn-primary"><span class="btn-text"><i class="fa-brands fa-arxiv" aria-label="arxiv"></i> arXiv</span></a> <a href="https://www.youtube.com/watch?v=cSQTZoZPJzs" class="btn btn-primary"><span class="btn-text"><i class="fa-solid fa-video" aria-label="video"></i> Video</span></a> <a href="https://github.com/" class="btn btn-primary"><span class="btn-text"><i class="fa-brands fa-github" aria-label="github"></i> Code</span></a> <a href="https://example.com" class="btn btn-primary"><span class="btn-text"><i class="fa-solid fa-database" aria-label="database"></i> Data</span></a></p>
+<p><a href="https://www.youtube.com/watch?v=cSQTZoZPJzs" class="btn btn-primary"><span class="btn-text"><i class="fa-solid fa-video" aria-label="video"></i> Video</span></a></p>
 </div>
 </section>
 <!-- ============================================================ -->
@@ -188,7 +184,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="static/images/gem.png" class="teaser-img img-fluid figure-img"></p>
-<figcaption>GEM vehicle on a public road</figcaption>
+<figcaption>GEM car that we will be programming</figcaption>
 </figure>
 </div>
 <!-- Option B: Embed a video teaser (uncomment below, comment out image above)
@@ -203,139 +199,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="abstract" class="level2 section-title">
 <h2 class="section-title anchored" data-anchor-id="abstract">Abstract</h2>
 <div class="abstract-text">
-<p>Replace this text with your project abstract. Describe the problem you are solving, the key insight or contribution of your work, and the main results. Keep it concise — typically 150–250 words. You can use <strong>bold</strong> and <em>italic</em> formatting to emphasize key terms.</p>
-<p>For example: We present a novel approach to [task] that achieves state-of-the-art results on [benchmark]. Our method leverages [key technique] to overcome [limitation of prior work]. Experiments demonstrate that our approach outperforms existing methods by [metric improvement] while requiring [efficiency gain].</p>
-<p>We will be working on a full-scale autonomous vehicle, the Polaris GEM e2. Using this car and what we have learned throughout the semester, we plan on implementing several features. The first feature is the most obvious: <strong>have the car stay in the lanes</strong>. Whether the car is on a straight or a turn, the car must stay in the lane to ensure proper functionality. We also want our car to be able to <strong>detect obstacles on the road</strong>. This all relates to us wanting to generate an autonomous car that potentially could drive on a real road. If the car detects a stop sign, we want our car to stop for a certain amount of time to simulate what a car should do in the real world. Similarly, we want the car to stop in an emergency if an obstacle is detected in the car’s path. One final feature that we think would be smart to implement is that the car <strong>can park by itself</strong>. We want the car to be able to detect parking lines, and once it finds an empty spot, we can program the car to park itself.</p>
+<p>We will be working on a full-scale autonomous vehicle, the Polaris GEM e2. Using this car and what we have learned throughout the semester, we plan on implementing several features. The first feature is the most obvious: <strong>have the car stay in the lanes</strong>. Whether the car is on a straight or a turn, the car must stay in the lane to ensure proper functionality. We also want our car to be able to <strong>detect obstacles on the road</strong>. This all relates to us wanting to generate an autonomous car that potentially could drive on a real road. If the car detects a stop sign, we want our car to stop for a certain amount of time to simulate what a car should do in the real world. Similarly, we want the car to stop in an emergency if an obstacle is detected in the car’s path.</p>
+<p>One final feature that we think would be difficult, but interesting to implement, is that the car <strong>can park by itself</strong>. We want the car to be able to detect parking lines, and once it finds an empty spot, we can program the car to park itself. An additional level of execution would be adding <strong>parallel parking</strong> to the car. We think this is doable as we can use the cameras to determine how to drive the car into a parallel park. Parallel parking involves parking vertically between two cars. We could potentially use something to mark where the driver’s side of the first car is. The camera can pick up where this is and then line up to it. From there, we can have the car reverse until one of the cameras picks up both headlights of the “back car”. Then, the car can change the steering and finally finish the parallel parking. This would be difficult, but we think that it is doable.</p>
+</div>
+<!-- ============================================================ -->
+<!-- BLOCK DIAGRAM -->
+<!-- ============================================================ -->
+</section>
+<section id="block-diagram" class="level2 section-title section-container">
+<h2 class="section-title anchored" data-anchor-id="block-diagram">Block Diagram</h2>
+<div class="result-card">
+<!-- Block Diagram Image -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="static/images/block_diagram.png" class="block_diagram-img img-fluid figure-img"></p>
+<figcaption>Block Diagram for Abo GEM car</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<p>Above is our block diagram that we plan on implementing. Using the cameras and sensors on the car, we will get our needed information to pass into the computer. Once we have this, our program will run considering the values and send information to help with the car’s decision making process. For example, we want to follow inside the lanes. So, we want to make a decision to speed or slow down, and turn the steering wheel a certain way based on where in the lane we are. Finally, we will adjust the speed of the car, turn the wheel if needed, and update the current position.</p>
 </div>
 <!-- ============================================================ -->
 <!-- OVERVIEW / METHOD VIDEO -->
 <!-- ============================================================ -->
-</section>
-<section id="video" class="level2 section-title section-container">
-<h2 class="section-title anchored" data-anchor-id="video">Video</h2>
+<section id="video-of-lane-detection" class="level2 section-title section-container">
+<h2 class="section-title anchored" data-anchor-id="video-of-lane-detection">Video of Lane Detection</h2>
 <div class="video-container">
 <!-- Replace with your YouTube or local video embed -->
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/cSQTZoZPJzs" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="static/videos/lane_detection.mov"></video></div>
 </div>
 </section>
+<p>In this video, we are running the lane detection on the information we received from the rosbag. We drove the car to collect this information around the track, put it in a flashdrive, and tested it in the simulation. The issue that we came across was that it was very noisy, which could pose an issue in the future for the controller. So, we think that we might have to design our controller not completely relying on where the lanes go because it could result in a faulty controller.</p>
+<p>:::</p>
 <!-- ============================================================ -->
-<!-- RESULTS GALLERY -->
+<!-- NEXT STEPS -->
 <!-- ============================================================ -->
-<section id="results" class="level2 section-title section-container">
-<h2 class="section-title anchored" data-anchor-id="results">Results</h2>
+<div class="section-container">
+<section id="next-steps" class="level2 section-title">
+<h2 class="section-title anchored" data-anchor-id="next-steps">Next Steps</h2>
 <div class="content-text">
-<p>Provide a brief description of the results shown below. Explain what the reader should observe and why it matters.</p>
+<p>After getting the lane following complete, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle. The final step after this would be to recognize stop signs, pedestrians, and other potential obstacles.</p>
 </div>
-<div class="results-grid">
-<div class="result-card">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="static/images/placeholder-result1.svg" class="img-fluid figure-img"></p>
-<figcaption>Result 1 caption</figcaption>
-</figure>
-</div>
-</div>
-<div class="result-card">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="static/images/placeholder-result2.svg" class="img-fluid figure-img"></p>
-<figcaption>Result 2 caption</figcaption>
-</figure>
-</div>
-</div>
-<div class="result-card">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="static/images/placeholder-result3.svg" class="img-fluid figure-img"></p>
-<figcaption>Result 3 caption</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<!-- ============================================================ -->
-<!-- QUALITATIVE COMPARISONS -->
-<!-- ============================================================ -->
-<section id="qualitative-comparisons" class="level2 section-title section-container">
-<h2 class="section-title anchored" data-anchor-id="qualitative-comparisons">Qualitative Comparisons</h2>
-<div class="content-text">
-<p>Describe the comparison setup — which baselines are you comparing against, and what should the reader look for in the side-by-side results.</p>
-</div>
-<div class="comparison-grid">
-<div class="comparison-item">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="static/images/placeholder-ours.svg" class="img-fluid figure-img"></p>
-<figcaption>Ours</figcaption>
-</figure>
-</div>
-<p><strong>Ours</strong></p>
-</div>
-<div class="comparison-item">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="static/images/placeholder-baseline.svg" class="img-fluid figure-img"></p>
-<figcaption>Baseline A</figcaption>
-</figure>
-</div>
-<p><strong>Baseline A</strong></p>
-</div>
-</div>
-</section>
-<!-- ============================================================ -->
-<!-- INTERACTIVE SLIDER (Optional) -->
-<!-- ============================================================ -->
-<section id="interpolation-demo" class="level2 section-title section-container">
-<h2 class="section-title anchored" data-anchor-id="interpolation-demo">Interpolation Demo</h2>
-<div class="content-text">
-<p>If your method supports interpolation or continuous control, you can add an interactive slider here. The example below shows how to set one up.</p>
-</div>
-<div class="interpolation-panel">
-<div class="interpolation-endpoints">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="static/images/placeholder-start.svg" class="endpoint-img img-fluid figure-img"></p>
-<figcaption>Start</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="static/images/placeholder-end.svg" class="endpoint-img img-fluid figure-img"></p>
-<figcaption>End</figcaption>
-</figure>
-</div>
-</div>
-<input type="range" min="0" max="100" value="50" class="interpolation-slider" id="interpolation-slider">
-<div id="interpolation-value" class="interpolation-value">
-50%
-</div>
-<script>
-  const slider = document.getElementById('interpolation-slider');
-  const display = document.getElementById('interpolation-value');
-  slider.addEventListener('input', function() {
-    display.textContent = this.value + '%';
-  });
-</script>
-</div>
-</section>
-<!-- ============================================================ -->
-<!-- RELATED WORK -->
-<!-- ============================================================ -->
-<section id="related-work" class="level2 section-title section-container">
-<h2 class="section-title anchored" data-anchor-id="related-work">Related Work</h2>
-<div class="content-text">
-<p>Here are some related works in this area:</p>
-<ul>
-<li><a href="https://example.com">Related Paper 1</a> introduces an idea similar to ours for [topic].</li>
-<li><a href="https://example.com">Related Paper 2</a> also addresses [problem] using [approach].</li>
-<li><a href="https://example.com">Related Paper 3</a> proposes [technique] which is complementary to our method.</li>
-</ul>
-<p>Check out <a href="https://example.com">this survey</a> for a comprehensive overview of the field.</p>
-</div>
-</section>
 <!-- ============================================================ -->
 <!-- BIBTEX -->
 <!-- ============================================================ -->
+</section>
 <section id="bibtex" class="level2 section-title section-container">
 <h2 class="section-title anchored" data-anchor-id="bibtex">BibTeX</h2>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">AutonomousNavigationPolarisGEMe2</span>,</span>
@@ -758,6 +667,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 </div> <!-- /content -->
 <script>videojs(video_shortcode_videojs_video1);</script>
+<script>videojs(video_shortcode_videojs_video2);</script>
 
 
 

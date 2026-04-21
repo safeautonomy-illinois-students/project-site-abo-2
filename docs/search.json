@@ -2,57 +2,43 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Your Project Title Here",
+    "title": "Autonomous Navigation for the Polaris GEM e2",
     "section": "",
-    "text": "A catchy one-line description of your project\n\n\nAditya Korlahalli1, Gokul Narayan1, Ishaan Kandamuri1 Shyam Peden1\n\n\n1University of Illinois Urbana-Champaign\n\n\n Paper  arXiv  Video  Code  Data"
+    "text": "Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.\n\n\nAditya Korlahalli1, Gokul Narayan1, Ishaan Kandamuri1 Shyam Peden1\n\n\n1University of Illinois Urbana-Champaign\n\n\n Video\nIn this video, we are running the lane detection on the information we received from the rosbag. We drove the car to collect this information around the track, put it in a flashdrive, and tested it in the simulation. The issue that we came across was that it was very noisy, which could pose an issue in the future for the controller. So, we think that we might have to design our controller not completely relying on where the lanes go because it could result in a faulty controller.\n:::"
   },
   {
     "objectID": "index.html#abstract",
     "href": "index.html#abstract",
-    "title": "Your Project Title Here",
+    "title": "Autonomous Navigation for the Polaris GEM e2",
     "section": "Abstract",
-    "text": "Abstract\n\nReplace this text with your project abstract. Describe the problem you are solving, the key insight or contribution of your work, and the main results. Keep it concise — typically 150–250 words. You can use bold and italic formatting to emphasize key terms.\nFor example: We present a novel approach to [task] that achieves state-of-the-art results on [benchmark]. Our method leverages [key technique] to overcome [limitation of prior work]. Experiments demonstrate that our approach outperforms existing methods by [metric improvement] while requiring [efficiency gain].\nWe will be working on a full-scale autonomous vehicle, the Polaris GEM e2. Using this car and what we have learned throughout the semester, we plan on implementing several features. The first feature is the most obvious: have the car stay in the lanes. Whether the car is on a straight or a turn, the car must stay in the lane to ensure proper functionality. We also want our car to be able to detect obstacles on the road. This all relates to us wanting to generate an autonomous car that potentially could drive on a real road. If the car detects a stop sign, we want our car to stop for a certain amount of time to simulate what a car should do in the real world. Similarly, we want the car to stop in an emergency if an obstacle is detected in the car’s path. One final feature that we think would be smart to implement is that the car can park by itself. We want the car to be able to detect parking lines, and once it finds an empty spot, we can program the car to park itself."
+    "text": "Abstract\n\nWe will be working on a full-scale autonomous vehicle, the Polaris GEM e2. Using this car and what we have learned throughout the semester, we plan on implementing several features. The first feature is the most obvious: have the car stay in the lanes. Whether the car is on a straight or a turn, the car must stay in the lane to ensure proper functionality. We also want our car to be able to detect obstacles on the road. This all relates to us wanting to generate an autonomous car that potentially could drive on a real road. If the car detects a stop sign, we want our car to stop for a certain amount of time to simulate what a car should do in the real world. Similarly, we want the car to stop in an emergency if an obstacle is detected in the car’s path.\nOne final feature that we think would be difficult, but interesting to implement, is that the car can park by itself. We want the car to be able to detect parking lines, and once it finds an empty spot, we can program the car to park itself. An additional level of execution would be adding parallel parking to the car. We think this is doable as we can use the cameras to determine how to drive the car into a parallel park. Parallel parking involves parking vertically between two cars. We could potentially use something to mark where the driver’s side of the first car is. The camera can pick up where this is and then line up to it. From there, we can have the car reverse until one of the cameras picks up both headlights of the “back car”. Then, the car can change the steering and finally finish the parallel parking. This would be difficult, but we think that it is doable."
   },
   {
-    "objectID": "index.html#video",
-    "href": "index.html#video",
-    "title": "Your Project Title Here",
-    "section": "Video",
-    "text": "Video"
+    "objectID": "index.html#block-diagram",
+    "href": "index.html#block-diagram",
+    "title": "Autonomous Navigation for the Polaris GEM e2",
+    "section": "Block Diagram",
+    "text": "Block Diagram\n\n\n\n\n\nBlock Diagram for Abo GEM car"
   },
   {
-    "objectID": "index.html#results",
-    "href": "index.html#results",
-    "title": "Your Project Title Here",
-    "section": "Results",
-    "text": "Results\n\nProvide a brief description of the results shown below. Explain what the reader should observe and why it matters.\n\n\n\n\n\n\nResult 1 caption\n\n\n\n\n\n\n\nResult 2 caption\n\n\n\n\n\n\n\nResult 3 caption"
+    "objectID": "index.html#video-of-lane-detection",
+    "href": "index.html#video-of-lane-detection",
+    "title": "Autonomous Navigation for the Polaris GEM e2",
+    "section": "Video of Lane Detection",
+    "text": "Video of Lane Detection"
   },
   {
-    "objectID": "index.html#qualitative-comparisons",
-    "href": "index.html#qualitative-comparisons",
-    "title": "Your Project Title Here",
-    "section": "Qualitative Comparisons",
-    "text": "Qualitative Comparisons\n\nDescribe the comparison setup — which baselines are you comparing against, and what should the reader look for in the side-by-side results.\n\n\n\n\n\n\nOurs\n\n\nOurs\n\n\n\n\n\nBaseline A\n\n\nBaseline A"
-  },
-  {
-    "objectID": "index.html#interpolation-demo",
-    "href": "index.html#interpolation-demo",
-    "title": "Your Project Title Here",
-    "section": "Interpolation Demo",
-    "text": "Interpolation Demo\n\nIf your method supports interpolation or continuous control, you can add an interactive slider here. The example below shows how to set one up.\n\n\n\n\n\n\nStart\n\n\n\n\n\nEnd\n\n\n\n\n\n50%"
-  },
-  {
-    "objectID": "index.html#related-work",
-    "href": "index.html#related-work",
-    "title": "Your Project Title Here",
-    "section": "Related Work",
-    "text": "Related Work\n\nHere are some related works in this area:\n\nRelated Paper 1 introduces an idea similar to ours for [topic].\nRelated Paper 2 also addresses [problem] using [approach].\nRelated Paper 3 proposes [technique] which is complementary to our method.\n\nCheck out this survey for a comprehensive overview of the field."
+    "objectID": "index.html#next-steps",
+    "href": "index.html#next-steps",
+    "title": "Autonomous Navigation for the Polaris GEM e2",
+    "section": "Next Steps",
+    "text": "Next Steps\n\nAfter getting the lane following complete, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle. The final step after this would be to recognize stop signs, pedestrians, and other potential obstacles."
   },
   {
     "objectID": "index.html#bibtex",
     "href": "index.html#bibtex",
-    "title": "Your Project Title Here",
+    "title": "Autonomous Navigation for the Polaris GEM e2",
     "section": "BibTeX",
-    "text": "BibTeX\n@article{yourname2026project,\n  author    = {Author One and Author Two and Author Three},\n  title     = {Your Project Title Here},\n  journal   = {Conference or Journal Name},\n  year      = {2026},\n}"
+    "text": "BibTeX\n@article{AutonomousNavigationPolarisGEMe2,\n  author    = {Aditya Korlahalli and Gokul Narayan and Ishaan Kandamuri and Shyam Peden},\n  title     = {Autonomous Navigation for the Polaris GEM e2},\n  journal   = {ECE 484 Final Project},\n  year      = {2026},\n}"
   }
 ]
