@@ -120,9 +120,23 @@ The issue that we came across was that it was very noisy, which could pose an is
 
 ::: {.video-container}
 <!-- Replace with your YouTube or local video embed -->
-{{< video static/videos/lane_detection.mov >}}
+{{< video static/videos/rosbagvideo_front_cam.mov >}}
 
 :::
+
+:::
+
+
+Here is the IRL driving replay from our Rosbag.
+
+
+:::
+
+::: {.result-card}
+<!-- GPS, LIDAR Scan, and other cameras-->
+![Image from all sensors and cameras on GEM e2](static/images/camera_views.png){.camera_views-img}
+:::
+
 
 
 :::

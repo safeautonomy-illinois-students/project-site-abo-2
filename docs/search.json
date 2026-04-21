@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Autonomous Navigation for the Polaris GEM e2",
     "section": "",
-    "text": "Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.\n\n\nAditya Korlahalli1, Gokul Narayan1, Ishaan Kandamuri1 Shyam Peden1\n\n\n1University of Illinois Urbana-Champaign\n\n\n Video\nIn this video, we are running the lane detection on the information we received from the rosbag. We drove the car to collect this information around the track, put it in a flashdrive, and tested it in the simulation. The issue that we came across was that it was very noisy, which could pose an issue in the future for the controller. So, we think that we might have to design our controller not completely relying on where the lanes go because it could result in a faulty controller.\n:::"
+    "text": "Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.\n\n\nAditya Korlahalli1, Gokul Narayan1, Ishaan Kandamuri1 Shyam Peden1\n\n\n1University of Illinois Urbana-Champaign\n\n\n Video\nIn this video, we are running the lane detection on the information we received from the rosbag. We drove the car to collect this information around the track, put it in a flashdrive, and tested it in the simulation. The issue that we came across was that it was very noisy, which could pose an issue in the future for the controller. So, we think that we might have to design our controller not completely relying on where the lanes go because it could result in a faulty controller.\n:::\n::: ## Rosbag Replay from IRL Driving {.section-title}\n:::\nHere is the IRL driving replay from our Rosbag.\n:::\n:::"
   },
   {
     "objectID": "index.html#abstract",
@@ -18,7 +18,7 @@
     "href": "index.html#block-diagram",
     "title": "Autonomous Navigation for the Polaris GEM e2",
     "section": "Block Diagram",
-    "text": "Block Diagram\n\n\n\n\n\nBlock Diagram for Abo GEM car"
+    "text": "Block Diagram\n\n\n\n\n\nBlock Diagram for Abo Implementation on GEM e2"
   },
   {
     "objectID": "index.html#video-of-lane-detection",
@@ -32,7 +32,7 @@
     "href": "index.html#next-steps",
     "title": "Autonomous Navigation for the Polaris GEM e2",
     "section": "Next Steps",
-    "text": "Next Steps\n\nAfter getting the lane following complete, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle. The final step after this would be to recognize stop signs, pedestrians, and other potential obstacles."
+    "text": "Next Steps\n\nAfter completing the IRL lane following for the GEM e2, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle. The final step after this would be to recognize stop signs, pedestrians, and other potential obstacles."
   },
   {
     "objectID": "index.html#bibtex",

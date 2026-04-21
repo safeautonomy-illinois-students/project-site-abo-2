@@ -213,7 +213,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="static/images/block_diagram.png" class="block_diagram-img img-fluid figure-img"></p>
-<figcaption>Block Diagram for Abo GEM car</figcaption>
+<figcaption>Block Diagram for Abo Implementation on GEM e2</figcaption>
 </figure>
 </div>
 </div>
@@ -232,6 +232,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <p>In this video, we are running the lane detection on the information we received from the rosbag. We drove the car to collect this information around the track, put it in a flashdrive, and tested it in the simulation. The issue that we came across was that it was very noisy, which could pose an issue in the future for the controller. So, we think that we might have to design our controller not completely relying on where the lanes go because it could result in a faulty controller.</p>
 <p>:::</p>
+<p>::: ## Rosbag Replay from IRL Driving {.section-title}</p>
+<div class="video-container">
+<!-- Replace with your YouTube or local video embed -->
+<div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="static/videos/rosbagvideo_front_cam.mov"></video></div>
+</div>
+<p>:::</p>
+<p>Here is the IRL driving replay from our Rosbag.</p>
+<p>:::</p>
+<div class="result-card">
+<!-- GPS, LIDAR Scan, and other cameras-->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="static/images/camera_views.png" class="camera_views-img img-fluid figure-img"></p>
+<figcaption>Image from all sensors and cameras on GEM e2</figcaption>
+</figure>
+</div>
+</div>
+<p>:::</p>
 <!-- ============================================================ -->
 <!-- NEXT STEPS -->
 <!-- ============================================================ -->
@@ -239,7 +257,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="next-steps" class="level2 section-title">
 <h2 class="section-title anchored" data-anchor-id="next-steps">Next Steps</h2>
 <div class="content-text">
-<p>After getting the lane following complete, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle. The final step after this would be to recognize stop signs, pedestrians, and other potential obstacles.</p>
+<p>After completing the IRL lane following for the GEM e2, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle. The final step after this would be to recognize stop signs, pedestrians, and other potential obstacles.</p>
 </div>
 <!-- ============================================================ -->
 <!-- BIBTEX -->
@@ -668,6 +686,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div> <!-- /content -->
 <script>videojs(video_shortcode_videojs_video1);</script>
 <script>videojs(video_shortcode_videojs_video2);</script>
+<script>videojs(video_shortcode_videojs_video3);</script>
 
 
 
