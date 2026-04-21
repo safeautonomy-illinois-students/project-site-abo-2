@@ -84,7 +84,7 @@ One final feature that we think would be difficult, but interesting to implement
 
 ::: {.result-card}
 <!-- Block Diagram Image -->
-![Block Diagram for Abo GEM car](static/images/block_diagram.png){.block_diagram-img}
+![Block Diagram for Abo Implementation on GEM e2](static/images/block_diagram.png){.block_diagram-img}
 :::
 
 :::
@@ -115,6 +115,19 @@ The issue that we came across was that it was very noisy, which could pose an is
 
 :::
 
+:::
+## Rosbag Replay from IRL Driving {.section-title}
+
+::: {.video-container}
+<!-- Replace with your YouTube or local video embed -->
+{{< video static/videos/lane_detection.mov >}}
+
+:::
+
+
+:::
+
+
 
 <!-- ============================================================ -->
 <!-- NEXT STEPS -->
@@ -125,7 +138,7 @@ The issue that we came across was that it was very noisy, which could pose an is
 ## Next Steps {.section-title}
 
 ::: {.content-text}
-After completing the IRL lane following for the  GEM e2, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle.
+After completing the IRL lane following for the GEM e2, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle.
 The final step after this would be to recognize stop signs, pedestrians, and other potential obstacles. 
 
 :::
