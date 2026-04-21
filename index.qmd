@@ -125,7 +125,7 @@ The issue that we came across was that it was very noisy, which could pose an is
 ## Next Steps {.section-title}
 
 ::: {.content-text}
-After getting the lane following complete, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle.
+After completing the IRL lane following for the  GEM e2, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle.
 The final step after this would be to recognize stop signs, pedestrians, and other potential obstacles. 
 
 :::
