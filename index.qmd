@@ -84,6 +84,19 @@ In this video, we are running the lane detection on the information we received 
 :::
 
 ::: {.section-container}
+## Lane Detection and Following in Highbay Simulation {.section-title}
+
+::: {.result-card}
+![Lane masking in the Gazebo simulation highbay track](static/images/highbay_lane.png){.highbay-lane-img}
+:::
+
+::: {.content-text}
+We  implemented and tested our lane masking algorithms within the Gazebo simulation environment using the highbay track. Currently, we still need to do some additional filtering and tuning to generate the BEV and fitted trajectory curve. This planned setup will allow us to verify our computer vision pipeline—extracting raw image data and processing it into binary masks—ensuring the vehicle could identify lane boundaries before we deploy IRL.
+:::
+:::
+
+
+::: {.section-container}
 ## Rosbag Replay from IRL Driving {.section-title}
 
 ::: {.video-container}
