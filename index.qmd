@@ -72,14 +72,17 @@ Above is our block diagram that we plan on implementing. Using the cameras and s
 <!-- ============================================================ -->
 
 ::: {.section-container}
-## Video of Lane Detection {.section-title}
+## Simulation Video of Lane Detection, Following, and Pure Pursuit Control {.section-title}
 
 ::: {.video-container}
-{{< video static/videos/lane_detection.mov >}}
+{{< video static/videos/working_lane_detection.mov >}}
 :::
 
 ::: {.content-text}
-In this video, we are running the lane detection on the information we received from the rosbag. We drove the car to collect this information around the track, put it in a flash drive, and tested it in the simulation. The issue that we came across was that it was very noisy, which could pose an issue in the future for the controller. So, we think that we might have to design our controller not completely relying on where the lanes go because it could result in a faulty controller.
+In this video, we are running our lane detection, lane following, and pure pursuit control code in the simulation. 
+As you can see, we are able to detect the lanes and automatically steer to stay within the lines. We had to experiment a lot with speed, how much to steer, and how to avoid the car recognizing the cones as lanes.
+After much testing, we were able to create a proper lane following algorithm that is ready for the Highbay car. 
+Since the simulation had 2 lanes, the code struggled a bit after a turn identifying which lane was the right one. However, this will not be an issue on the Highbay as there is just one lane.
 :::
 :::
 
