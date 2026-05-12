@@ -98,6 +98,18 @@ We  implemented and tested our lane masking algorithms within the Gazebo simulat
 :::
 :::
 
+::: {.section-container}
+## Lane Detection in Real-life Highbay {.section-title}
+
+::: {.result-card}
+![Lane Detection in Highbay track](static/images/highbay_lane.png){.highbay-lane-img}
+:::
+
+::: {.content-text}
+We were able to get the car to detect the lanes on the real-life track properly. One thing that we found was that when it was too funny, we ran into an issue of having too much noise. As a result, our bev image had much white.
+:::
+:::
+
 
 ::: {.section-container}
 ## Rosbag Replay from IRL Driving {.section-title}
