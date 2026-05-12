@@ -235,6 +235,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>We implemented and tested our lane masking algorithms within the Gazebo simulation environment using the highbay track. Currently, we still need to do some additional filtering and tuning to generate the BEV and fitted trajectory curve. This planned setup will allow us to verify our computer vision pipeline—extracting raw image data and processing it into binary masks—ensuring the vehicle could identify lane boundaries before we deploy IRL.</p>
 </div>
 </section>
+<section id="lane-detection-in-real-life-highbay" class="level2 section-title section-container">
+<h2 class="section-title anchored" data-anchor-id="lane-detection-in-real-life-highbay">Lane Detection in Real-life Highbay</h2>
+<div class="result-card">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="static/images/highbay_lane.png" class="highbay-lane-img img-fluid figure-img"></p>
+<figcaption>Lane Detection in Highbay track</figcaption>
+</figure>
+</div>
+</div>
+<div class="content-text">
+<p>We were able to get the car to detect the lanes on the real-life track properly. One thing that we found was that when it was too funny, we ran into an issue of having too much noise. As a result, our bev image had much white.</p>
+</div>
+</section>
 <section id="rosbag-replay-from-irl-driving" class="level2 section-title section-container">
 <h2 class="section-title anchored" data-anchor-id="rosbag-replay-from-irl-driving">Rosbag Replay from IRL Driving</h2>
 <div class="video-container">
@@ -250,6 +264,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <figcaption>Image from all sensors and cameras on GEM e2</figcaption>
 </figure>
 </div>
+</div>
+</section>
+<section id="obstacle-detection-in-simulation" class="level2 section-title section-container">
+<h2 class="section-title anchored" data-anchor-id="obstacle-detection-in-simulation">Obstacle Detection in Simulation</h2>
+<div class="result-card">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="static/images/highbay_lane.png" class="highbay-lane-img img-fluid figure-img"></p>
+<figcaption>Obstacle Detection in simulation</figcaption>
+</figure>
+</div>
+</div>
+<div class="content-text">
+<p>Using a state machine, we were able to get the car to detect an obstacle such as a stop sign. Once it detects the sign, it will stop for 2 seconds, and then keep going. So, our car is functining as we wanted it to.</p>
 </div>
 </section>
 <!-- ============================================================ -->

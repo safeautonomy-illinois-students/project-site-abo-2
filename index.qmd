@@ -127,6 +127,20 @@ Here is the IRL driving replay from our Rosbag.
 :::
 :::
 
+::: {.section-container}
+## Obstacle Detection in Simulation {.section-title}
+
+::: {.result-card}
+![Obstacle Detection in simulation](static/images/highbay_lane.png){.highbay-lane-img}
+:::
+
+::: {.content-text}
+Using a state machine, we were able to get the car to detect an obstacle such as a stop sign. 
+Once it detects the sign, it will stop for 2 seconds, and then keep going. So, our car is functining as we wanted it to.
+:::
+:::
+
+
 <!-- ============================================================ -->
 
 <!-- NEXT STEPS -->

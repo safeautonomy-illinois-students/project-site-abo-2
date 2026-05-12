@@ -35,11 +35,25 @@
     "text": "Lane Detection and Following in Highbay Simulation\n\n\n\n\nLane masking in the Gazebo simulation highbay track\n\n\n\n\nWe implemented and tested our lane masking algorithms within the Gazebo simulation environment using the highbay track. Currently, we still need to do some additional filtering and tuning to generate the BEV and fitted trajectory curve. This planned setup will allow us to verify our computer vision pipeline—extracting raw image data and processing it into binary masks—ensuring the vehicle could identify lane boundaries before we deploy IRL."
   },
   {
+    "objectID": "index.html#lane-detection-in-real-life-highbay",
+    "href": "index.html#lane-detection-in-real-life-highbay",
+    "title": "Autonomous Navigation for the Polaris GEM e2",
+    "section": "Lane Detection in Real-life Highbay",
+    "text": "Lane Detection in Real-life Highbay\n\n\n\n\nLane Detection in Highbay track\n\n\n\n\nWe were able to get the car to detect the lanes on the real-life track properly. One thing that we found was that when it was too funny, we ran into an issue of having too much noise. As a result, our bev image had much white."
+  },
+  {
     "objectID": "index.html#rosbag-replay-from-irl-driving",
     "href": "index.html#rosbag-replay-from-irl-driving",
     "title": "Autonomous Navigation for the Polaris GEM e2",
     "section": "Rosbag Replay from IRL Driving",
     "text": "Rosbag Replay from IRL Driving\n\n\n\n\nHere is the IRL driving replay from our Rosbag.\n\n\n\n\n\nImage from all sensors and cameras on GEM e2"
+  },
+  {
+    "objectID": "index.html#obstacle-detection-in-simulation",
+    "href": "index.html#obstacle-detection-in-simulation",
+    "title": "Autonomous Navigation for the Polaris GEM e2",
+    "section": "Obstacle Detection in Simulation",
+    "text": "Obstacle Detection in Simulation\n\n\n\n\nObstacle Detection in simulation\n\n\n\n\nUsing a state machine, we were able to get the car to detect an obstacle such as a stop sign. Once it detects the sign, it will stop for 2 seconds, and then keep going. So, our car is functining as we wanted it to."
   },
   {
     "objectID": "index.html#next-steps",
