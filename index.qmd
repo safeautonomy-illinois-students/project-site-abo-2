@@ -81,20 +81,7 @@ Above is our block diagram that we plan on implementing. Using the cameras and s
 ::: {.content-text}
 In this video, we are running our lane detection, lane following, and pure pursuit control code in the simulation. 
 As you can see, we are able to detect the lanes and automatically steer to stay within the lines. We had to experiment a lot with speed, how much to steer, and how to avoid the car recognizing the cones as lanes.
-After much testing, we were able to create a proper lane following algorithm that is ready for the Highbay car. 
-Since the simulation had 2 lanes, the code struggled a bit after a turn identifying which lane was the right one. However, this will not be an issue on the Highbay as there is just one lane.
-:::
-:::
-
-::: {.section-container}
-## Lane Detection and Following in Highbay Simulation {.section-title}
-
-::: {.result-card}
-![Lane masking in the Gazebo simulation highbay track](static/images/highbay_lane.png){.highbay-lane-img}
-:::
-
-::: {.content-text}
-We  implemented and tested our lane masking algorithms within the Gazebo simulation environment using the highbay track. Currently, we still need to do some additional filtering and tuning to generate the BEV and fitted trajectory curve. This planned setup will allow us to verify our computer vision pipeline—extracting raw image data and processing it into binary masks—ensuring the vehicle could identify lane boundaries before we deploy IRL.
+After much testing, we were able to create a proper lane following algorithm that is ready for the Highbay car. The car finished 3 laps without failure.
 :::
 :::
 
@@ -121,10 +108,6 @@ We attribute this to the gap from sim to irl and we know if we had more time we 
 
 ::: {.content-text}
 Here is the IRL driving replay from our Rosbag.
-:::
-
-::: {.result-card}
-![Image from all sensors and cameras on GEM e2](static/images/camera_views.png){.camera_views-img}
 :::
 :::
 
