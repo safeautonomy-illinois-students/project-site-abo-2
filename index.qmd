@@ -1,4 +1,4 @@
---
+---
 pagetitle: "Autonomous Navigation for the Polaris GEM e2"
 format:
   html:
