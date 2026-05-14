@@ -25,15 +25,12 @@ Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.
 ^1^University of Illinois Urbana-Champaign
 :::
 
-::: {.button-row}
-[{{< fa video >}} Video](https://www.youtube.com/watch?v=cSQTZoZPJzs){.btn .btn-primary}
-:::
 
 :::
 
 ::: {.section-container}
 ::: {.hero-teaser}
-![GEM car that we will be programming](static/images/gem.png){.teaser-img}
+![GEM car that we will be programming](static/images/gem_real.png){.teaser-img}
 :::
 :::
 
@@ -42,8 +39,6 @@ Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.
 
 ::: {.abstract-text}
 We will be working on a full-scale autonomous vehicle, the Polaris GEM e2. Using this car and what we have learned throughout the semester, we plan on implementing several features. The first feature is the most obvious: have the car stay in the lanes. Whether the car is on a straight or a turn, the car must stay in the lane to ensure proper functionality. We also want our car to be able to detect obstacles on the road. This all relates to us wanting to generate an autonomous car that potentially could drive on a real road. If the car detects a stop sign, we want our car to stop for a certain amount of time to simulate what a car should do in the real world. Similarly, we want the car to stop in an emergency if an obstacle is detected in the car’s path. 
-
-One final feature that we think would be difficult, but interesting to implement, is that the car can park by itself. We want the car to be able to detect parking lines, and once it finds an empty spot, we can program the car to park itself. An additional level of execution would be adding parallel parking to the car. We think this is doable as we can use the cameras to determine how to drive the car into a parallel park. Parallel parking involves parking vertically between two cars. We could potentially use something to mark where the driver’s side of the first car is. The camera can pick up where this is and then line up to it. From there, we can have the car reverse until one of the cameras picks up both headlights of the “back car”. Then, the car can change the steering and finally finish the parallel parking. This would be difficult, but we think that it is doable. 
 :::
 :::
 
@@ -127,16 +122,18 @@ Once it detects the sign, it will stop for 2 seconds, and then keep going. So, o
 
 <!-- ============================================================ -->
 
-<!-- NEXT STEPS -->
+<!-- Conclusion and Remarks -->
 
 <!-- ============================================================ -->
 
 
 ::: {.section-container}
-## Next Steps {.section-title}
+## Conclusion and Remarks {.section-title}
 
 ::: {.content-text}
-After completing the IRL lane following for the GEM e2, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle. The final step after this would be to recognize stop signs, pedestrians, and other potential obstacles. 
+Overall, we would have been able to fully integrate if we had more time with the hardware after implementing the lane following in simulation.
+We definitely could have tuned the steering gains better and made a fully working controller. We found that the gap from simulation to real-life was the biggest hurdle due to our inexperience with dealing with the real-life camera extrinsics.
+With this increase in time, we also think we could have easily implemented the car finding the lane immediately from a parking spot and going to a given GPS point.
 :::
 :::
 
