@@ -81,6 +81,20 @@ After much testing, we were able to create a proper lane following algorithm tha
 :::
 
 ::: {.section-container}
+## Driving Metrics {.section-title}
+
+::: {.result-card}
+![Pipeline Evaluation Metrics](static/images/metrics.png){.block_diagram-img}
+:::
+
+::: {.content-text}
+Here are the evaluation metrics from our run. The error stays within 2m for a majority of the run. This seems like a large number. However, as you can see in the video, the car stays in the lane for a majority of the time
+:::
+:::
+
+
+
+::: {.section-container}
 ## Lane Detection in Real-life Highbay {.section-title}
 
 ::: {.video-container}
@@ -131,7 +145,7 @@ It also was able to detect an obstacle that serves as a stop sign, wait for 2 se
 ## Conclusion and Remarks {.section-title}
 
 ::: {.content-text}
-Overall, we would have been able to fully integrate if we had more time with the hardware after implementing the lane following in simulation.
+Overall, we firmly believe would have been able to fully integrate if we had more time with the hardware after implementing the lane following in simulation.
 We definitely could have tuned the steering gains better and made a fully working controller. We found that the gap from simulation to real-life was the biggest hurdle due to our inexperience with dealing with the real-life camera extrinsics.
 With this increase in time, we also think we could have easily implemented the car finding the lane immediately from a parking spot and going to a given GPS point.
 :::
