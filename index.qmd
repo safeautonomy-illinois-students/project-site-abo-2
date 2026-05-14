@@ -137,7 +137,7 @@ Here is the IRL driving replay from our Rosbag.
 
 ::: {.content-text}
 Using a state machine, we were able to get the car to detect an obstacle such as a stop sign. 
-Once it detects the sign, it will stop for 2 seconds, and then keep going. So, our car is functining as we wanted it to.
+Once it detects the sign, it will stop for 2 seconds, and then keep going. So, our car is functioning as we wanted it to.
 :::
 :::
 
