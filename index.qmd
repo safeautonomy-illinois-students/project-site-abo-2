@@ -1,4 +1,4 @@
----
+--
 pagetitle: "Autonomous Navigation for the Polaris GEM e2"
 format:
   html:
@@ -75,7 +75,7 @@ Above is our block diagram that we plan on implementing. Using the cameras and s
 ## Simulation Video of Lane Detection, Following, and Pure Pursuit Control {.section-title}
 
 ::: {.video-container}
-{{< video static/videos/working_lane_detection.mov >}}
+{{< video static/videos/sim_lane_detection.mov>}}
 :::
 
 ::: {.content-text}
@@ -101,12 +101,13 @@ We  implemented and tested our lane masking algorithms within the Gazebo simulat
 ::: {.section-container}
 ## Lane Detection in Real-life Highbay {.section-title}
 
-::: {.result-card}
-![Lane Detection in Highbay track](static/images/highbay_lane.png){.highbay-lane-img}
+::: {.video-container}
+{{< video static/videos/irl_lane_detection.mov>}}
 :::
 
 ::: {.content-text}
-We were able to get the car to detect the lanes on the real-life track properly. One thing that we found was that when it was too funny, we ran into an issue of having too much noise. As a result, our bev image had much white.
+The car was able to autonomously move given our controller. One issue as you can see in the video was that we did not handle the sharp turns well.
+We attribute this to the gap from sim to irl and we know if we had more time we could have fixed this issue.
 :::
 :::
 
