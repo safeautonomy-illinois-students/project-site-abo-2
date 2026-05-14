@@ -15,10 +15,10 @@ Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.
 :::
 
 ::: {.author-list}
-[**Aditya Korlahalli**](https://example.com)^1^,
-[**Gokul Narayan**](https://example.com)^1^,
-[**Ishaan Kandamuri**](https://example.com)^1^,
-[**Shyam Peden**](https://example.com)^1^
+[**Aditya Korlahalli**](https://www.linkedin.com/in/adityakorlahalli/)^1^,
+[**Gokul Narayan**](https://www.linkedin.com/in/-gokulnarayan/)^1^,
+[**Ishaan Kandamuri**](https://www.linkedin.com/in/ishaan-kandamuri-8a02141b2/)^1^,
+[**Shyam Peden**](https://www.linkedin.com/in/shyam-peden-89a715267/)^1^
 :::
 
 ::: {.affiliation-list}
