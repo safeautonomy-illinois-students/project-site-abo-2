@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Autonomous Navigation for the Polaris GEM e2",
     "section": "",
-    "text": "Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.\n\n\nAditya Korlahalli1, Gokul Narayan1, Ishaan Kandamuri1 Shyam Peden1\n\n\n1University of Illinois Urbana-Champaign\n\n\n Video\nIn this video, we are running the lane detection on the information we received from the rosbag. We drove the car to collect this information around the track, put it in a flashdrive, and tested it in the simulation. The issue that we came across was that it was very noisy, which could pose an issue in the future for the controller. So, we think that we might have to design our controller not completely relying on where the lanes go because it could result in a faulty controller.\n:::\n::: ## Rosbag Replay from IRL Driving {.section-title}\n:::\nHere is the IRL driving replay from our Rosbag.\n:::\n:::"
+    "text": "Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.\n\n\nAditya Korlahalli1, Gokul Narayan1, Ishaan Kandamuri1, Shyam Peden1\n\n\n1University of Illinois Urbana-Champaign\n\n\n Video"
   },
   {
     "objectID": "index.html#abstract",
@@ -18,14 +18,42 @@
     "href": "index.html#block-diagram",
     "title": "Autonomous Navigation for the Polaris GEM e2",
     "section": "Block Diagram",
-    "text": "Block Diagram\n\n\n\n\n\nBlock Diagram for Abo Implementation on GEM e2"
+    "text": "Block Diagram\n\n\n\n\nBlock Diagram for Implementation on GEM e2\n\n\n\n\nAbove is our block diagram that we plan on implementing. Using the cameras and sensors on the car, we will get our needed information to pass into the computer. Once we have this, our program will run considering the values and send information to help with the car’s decision-making process. For example, we want to follow inside the lanes. So, we want to make a decision to speed or slow down, and turn the steering wheel a certain way based on where in the lane we are. Finally, we will adjust the speed of the car, turn the wheel if needed, and update the current position."
   },
   {
-    "objectID": "index.html#video-of-lane-detection",
-    "href": "index.html#video-of-lane-detection",
+    "objectID": "index.html#simulation-video-of-lane-detection-following-and-pure-pursuit-control",
+    "href": "index.html#simulation-video-of-lane-detection-following-and-pure-pursuit-control",
     "title": "Autonomous Navigation for the Polaris GEM e2",
-    "section": "Video of Lane Detection",
-    "text": "Video of Lane Detection"
+    "section": "Simulation Video of Lane Detection, Following, and Pure Pursuit Control",
+    "text": "Simulation Video of Lane Detection, Following, and Pure Pursuit Control\n\n\n\n\nIn this video, we are running our lane detection, lane following, and pure pursuit control code in the simulation. As you can see, we are able to detect the lanes and automatically steer to stay within the lines. We had to experiment a lot with speed, how much to steer, and how to avoid the car recognizing the cones as lanes. After much testing, we were able to create a proper lane following algorithm that is ready for the Highbay car. Since the simulation had 2 lanes, the code struggled a bit after a turn identifying which lane was the right one. However, this will not be an issue on the Highbay as there is just one lane."
+  },
+  {
+    "objectID": "index.html#lane-detection-and-following-in-highbay-simulation",
+    "href": "index.html#lane-detection-and-following-in-highbay-simulation",
+    "title": "Autonomous Navigation for the Polaris GEM e2",
+    "section": "Lane Detection and Following in Highbay Simulation",
+    "text": "Lane Detection and Following in Highbay Simulation\n\n\n\n\nLane masking in the Gazebo simulation highbay track\n\n\n\n\nWe implemented and tested our lane masking algorithms within the Gazebo simulation environment using the highbay track. Currently, we still need to do some additional filtering and tuning to generate the BEV and fitted trajectory curve. This planned setup will allow us to verify our computer vision pipeline—extracting raw image data and processing it into binary masks—ensuring the vehicle could identify lane boundaries before we deploy IRL."
+  },
+  {
+    "objectID": "index.html#lane-detection-in-real-life-highbay",
+    "href": "index.html#lane-detection-in-real-life-highbay",
+    "title": "Autonomous Navigation for the Polaris GEM e2",
+    "section": "Lane Detection in Real-life Highbay",
+    "text": "Lane Detection in Real-life Highbay\n\n\n\n\nLane Detection in Highbay track\n\n\n\n\nWe were able to get the car to detect the lanes on the real-life track properly. One thing that we found was that when it was too funny, we ran into an issue of having too much noise. As a result, our bev image had much white."
+  },
+  {
+    "objectID": "index.html#rosbag-replay-from-irl-driving",
+    "href": "index.html#rosbag-replay-from-irl-driving",
+    "title": "Autonomous Navigation for the Polaris GEM e2",
+    "section": "Rosbag Replay from IRL Driving",
+    "text": "Rosbag Replay from IRL Driving\n\n\n\n\nHere is the IRL driving replay from our Rosbag.\n\n\n\n\n\nImage from all sensors and cameras on GEM e2"
+  },
+  {
+    "objectID": "index.html#obstacle-detection-in-simulation",
+    "href": "index.html#obstacle-detection-in-simulation",
+    "title": "Autonomous Navigation for the Polaris GEM e2",
+    "section": "Obstacle Detection in Simulation",
+    "text": "Obstacle Detection in Simulation\n\n\n\n\nObstacle Detection in simulation\n\n\n\n\nUsing a state machine, we were able to get the car to detect an obstacle such as a stop sign. Once it detects the sign, it will stop for 2 seconds, and then keep going. So, our car is functining as we wanted it to."
   },
   {
     "objectID": "index.html#next-steps",

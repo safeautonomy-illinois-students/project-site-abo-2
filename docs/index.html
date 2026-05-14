@@ -166,82 +166,98 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Precision Lane Tracking and Intelligent Parking for a Modern Robotaxi.</p>
 </div>
 <div class="author-list">
-<p><a href="https://example.com"><strong>Aditya Korlahalli</strong></a><sup>1</sup>, <a href="https://example.com"><strong>Gokul Narayan</strong></a><sup>1</sup>, <a href="https://example.com"><strong>Ishaan Kandamuri</strong></a><sup>1</sup> <a href="https://example.com"><strong>Shyam Peden</strong></a><sup>1</sup></p>
+<p><a href="https://example.com"><strong>Aditya Korlahalli</strong></a><sup>1</sup>, <a href="https://example.com"><strong>Gokul Narayan</strong></a><sup>1</sup>, <a href="https://example.com"><strong>Ishaan Kandamuri</strong></a><sup>1</sup>, <a href="https://example.com"><strong>Shyam Peden</strong></a><sup>1</sup></p>
 </div>
 <div class="affiliation-list">
 <p><sup>1</sup>University of Illinois Urbana-Champaign</p>
 </div>
 <div class="button-row">
-<p><a href="https://www.youtube.com/watch?v=cSQTZoZPJzs" class="btn btn-primary"><span class="btn-text"><i class="fa-solid fa-video" aria-label="video"></i> Video</span></a></p>
+<p><a href="https://www.youtube.com/watch?v=cSQTZoZPJzs" class="btn btn-primary"><i class="fa-solid fa-video" aria-label="video"></i> Video</a></p>
 </div>
 </section>
-<!-- ============================================================ -->
-<!-- TEASER IMAGE / VIDEO -->
-<!-- ============================================================ -->
 <div class="section-container">
 <div class="hero-teaser">
-<!-- Option A: Use a static image as the teaser -->
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="static/images/gem.png" class="teaser-img img-fluid figure-img"></p>
 <figcaption>GEM car that we will be programming</figcaption>
 </figure>
 </div>
-<!-- Option B: Embed a video teaser (uncomment below, comment out image above)
-
--->
 </div>
 </div>
-<!-- ============================================================ -->
-<!-- ABSTRACT -->
-<!-- ============================================================ -->
-<div class="section-container">
-<section id="abstract" class="level2 section-title">
+<section id="abstract" class="level2 section-title section-container">
 <h2 class="section-title anchored" data-anchor-id="abstract">Abstract</h2>
 <div class="abstract-text">
-<p>We will be working on a full-scale autonomous vehicle, the Polaris GEM e2. Using this car and what we have learned throughout the semester, we plan on implementing several features. The first feature is the most obvious: <strong>have the car stay in the lanes</strong>. Whether the car is on a straight or a turn, the car must stay in the lane to ensure proper functionality. We also want our car to be able to <strong>detect obstacles on the road</strong>. This all relates to us wanting to generate an autonomous car that potentially could drive on a real road. If the car detects a stop sign, we want our car to stop for a certain amount of time to simulate what a car should do in the real world. Similarly, we want the car to stop in an emergency if an obstacle is detected in the car’s path.</p>
-<p>One final feature that we think would be difficult, but interesting to implement, is that the car <strong>can park by itself</strong>. We want the car to be able to detect parking lines, and once it finds an empty spot, we can program the car to park itself. An additional level of execution would be adding <strong>parallel parking</strong> to the car. We think this is doable as we can use the cameras to determine how to drive the car into a parallel park. Parallel parking involves parking vertically between two cars. We could potentially use something to mark where the driver’s side of the first car is. The camera can pick up where this is and then line up to it. From there, we can have the car reverse until one of the cameras picks up both headlights of the “back car”. Then, the car can change the steering and finally finish the parallel parking. This would be difficult, but we think that it is doable.</p>
+<p>We will be working on a full-scale autonomous vehicle, the Polaris GEM e2. Using this car and what we have learned throughout the semester, we plan on implementing several features. The first feature is the most obvious: have the car stay in the lanes. Whether the car is on a straight or a turn, the car must stay in the lane to ensure proper functionality. We also want our car to be able to detect obstacles on the road. This all relates to us wanting to generate an autonomous car that potentially could drive on a real road. If the car detects a stop sign, we want our car to stop for a certain amount of time to simulate what a car should do in the real world. Similarly, we want the car to stop in an emergency if an obstacle is detected in the car’s path.</p>
+<p>One final feature that we think would be difficult, but interesting to implement, is that the car can park by itself. We want the car to be able to detect parking lines, and once it finds an empty spot, we can program the car to park itself. An additional level of execution would be adding parallel parking to the car. We think this is doable as we can use the cameras to determine how to drive the car into a parallel park. Parallel parking involves parking vertically between two cars. We could potentially use something to mark where the driver’s side of the first car is. The camera can pick up where this is and then line up to it. From there, we can have the car reverse until one of the cameras picks up both headlights of the “back car”. Then, the car can change the steering and finally finish the parallel parking. This would be difficult, but we think that it is doable.</p>
 </div>
+</section>
 <!-- ============================================================ -->
 <!-- BLOCK DIAGRAM -->
 <!-- ============================================================ -->
-</section>
 <section id="block-diagram" class="level2 section-title section-container">
 <h2 class="section-title anchored" data-anchor-id="block-diagram">Block Diagram</h2>
 <div class="result-card">
-<!-- Block Diagram Image -->
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="static/images/block_diagram.png" class="block_diagram-img img-fluid figure-img"></p>
-<figcaption>Block Diagram for Abo Implementation on GEM e2</figcaption>
+<figcaption>Block Diagram for Implementation on GEM e2</figcaption>
 </figure>
 </div>
 </div>
-</section>
-<p>Above is our block diagram that we plan on implementing. Using the cameras and sensors on the car, we will get our needed information to pass into the computer. Once we have this, our program will run considering the values and send information to help with the car’s decision making process. For example, we want to follow inside the lanes. So, we want to make a decision to speed or slow down, and turn the steering wheel a certain way based on where in the lane we are. Finally, we will adjust the speed of the car, turn the wheel if needed, and update the current position.</p>
+<div class="content-text">
+<p>Above is our block diagram that we plan on implementing. Using the cameras and sensors on the car, we will get our needed information to pass into the computer. Once we have this, our program will run considering the values and send information to help with the car’s decision-making process. For example, we want to follow inside the lanes. So, we want to make a decision to speed or slow down, and turn the steering wheel a certain way based on where in the lane we are. Finally, we will adjust the speed of the car, turn the wheel if needed, and update the current position.</p>
 </div>
+</section>
 <!-- ============================================================ -->
 <!-- OVERVIEW / METHOD VIDEO -->
 <!-- ============================================================ -->
-<section id="video-of-lane-detection" class="level2 section-title section-container">
-<h2 class="section-title anchored" data-anchor-id="video-of-lane-detection">Video of Lane Detection</h2>
+<section id="simulation-video-of-lane-detection-following-and-pure-pursuit-control" class="level2 section-title section-container">
+<h2 class="section-title anchored" data-anchor-id="simulation-video-of-lane-detection-following-and-pure-pursuit-control">Simulation Video of Lane Detection, Following, and Pure Pursuit Control</h2>
 <div class="video-container">
-<!-- Replace with your YouTube or local video embed -->
-<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="static/videos/lane_detection.mov"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="static/videos/working_lane_detection.mov"></video></div>
+</div>
+<div class="content-text">
+<p>In this video, we are running our lane detection, lane following, and pure pursuit control code in the simulation. As you can see, we are able to detect the lanes and automatically steer to stay within the lines. We had to experiment a lot with speed, how much to steer, and how to avoid the car recognizing the cones as lanes. After much testing, we were able to create a proper lane following algorithm that is ready for the Highbay car. Since the simulation had 2 lanes, the code struggled a bit after a turn identifying which lane was the right one. However, this will not be an issue on the Highbay as there is just one lane.</p>
 </div>
 </section>
-<p>In this video, we are running the lane detection on the information we received from the rosbag. We drove the car to collect this information around the track, put it in a flashdrive, and tested it in the simulation. The issue that we came across was that it was very noisy, which could pose an issue in the future for the controller. So, we think that we might have to design our controller not completely relying on where the lanes go because it could result in a faulty controller.</p>
-<p>:::</p>
-<p>::: ## Rosbag Replay from IRL Driving {.section-title}</p>
-<div class="video-container">
-<!-- Replace with your YouTube or local video embed -->
-<div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="static/videos/rosbagvideo_front_cam.mov"></video></div>
-</div>
-<p>:::</p>
-<p>Here is the IRL driving replay from our Rosbag.</p>
-<p>:::</p>
+<section id="lane-detection-and-following-in-highbay-simulation" class="level2 section-title section-container">
+<h2 class="section-title anchored" data-anchor-id="lane-detection-and-following-in-highbay-simulation">Lane Detection and Following in Highbay Simulation</h2>
 <div class="result-card">
-<!-- GPS, LIDAR Scan, and other cameras-->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="static/images/highbay_lane.png" class="highbay-lane-img img-fluid figure-img"></p>
+<figcaption>Lane masking in the Gazebo simulation highbay track</figcaption>
+</figure>
+</div>
+</div>
+<div class="content-text">
+<p>We implemented and tested our lane masking algorithms within the Gazebo simulation environment using the highbay track. Currently, we still need to do some additional filtering and tuning to generate the BEV and fitted trajectory curve. This planned setup will allow us to verify our computer vision pipeline—extracting raw image data and processing it into binary masks—ensuring the vehicle could identify lane boundaries before we deploy IRL.</p>
+</div>
+</section>
+<section id="lane-detection-in-real-life-highbay" class="level2 section-title section-container">
+<h2 class="section-title anchored" data-anchor-id="lane-detection-in-real-life-highbay">Lane Detection in Real-life Highbay</h2>
+<div class="result-card">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="static/images/highbay_lane.png" class="highbay-lane-img img-fluid figure-img"></p>
+<figcaption>Lane Detection in Highbay track</figcaption>
+</figure>
+</div>
+</div>
+<div class="content-text">
+<p>We were able to get the car to detect the lanes on the real-life track properly. One thing that we found was that when it was too funny, we ran into an issue of having too much noise. As a result, our bev image had much white.</p>
+</div>
+</section>
+<section id="rosbag-replay-from-irl-driving" class="level2 section-title section-container">
+<h2 class="section-title anchored" data-anchor-id="rosbag-replay-from-irl-driving">Rosbag Replay from IRL Driving</h2>
+<div class="video-container">
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="static/videos/rosbagvideo_front_cam.mov"></video></div>
+</div>
+<div class="content-text">
+<p>Here is the IRL driving replay from our Rosbag.</p>
+</div>
+<div class="result-card">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="static/images/camera_views.png" class="camera_views-img img-fluid figure-img"></p>
@@ -249,20 +265,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 </div>
-<p>:::</p>
+</section>
+<section id="obstacle-detection-in-simulation" class="level2 section-title section-container">
+<h2 class="section-title anchored" data-anchor-id="obstacle-detection-in-simulation">Obstacle Detection in Simulation</h2>
+<div class="result-card">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="static/images/highbay_lane.png" class="highbay-lane-img img-fluid figure-img"></p>
+<figcaption>Obstacle Detection in simulation</figcaption>
+</figure>
+</div>
+</div>
+<div class="content-text">
+<p>Using a state machine, we were able to get the car to detect an obstacle such as a stop sign. Once it detects the sign, it will stop for 2 seconds, and then keep going. So, our car is functining as we wanted it to.</p>
+</div>
+</section>
 <!-- ============================================================ -->
 <!-- NEXT STEPS -->
 <!-- ============================================================ -->
-<div class="section-container">
-<section id="next-steps" class="level2 section-title">
+<section id="next-steps" class="level2 section-title section-container">
 <h2 class="section-title anchored" data-anchor-id="next-steps">Next Steps</h2>
 <div class="content-text">
 <p>After completing the IRL lane following for the GEM e2, our next step would be to integrate the park-to-drive for a given parking location. This would go hand in hand with our desire to integrate parallel parking on the vehicle. The final step after this would be to recognize stop signs, pedestrians, and other potential obstacles.</p>
 </div>
+</section>
 <!-- ============================================================ -->
 <!-- BIBTEX -->
 <!-- ============================================================ -->
-</section>
 <section id="bibtex" class="level2 section-title section-container">
 <h2 class="section-title anchored" data-anchor-id="bibtex">BibTeX</h2>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">AutonomousNavigationPolarisGEMe2</span>,</span>
@@ -276,11 +305,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- FOOTER -->
 <!-- ============================================================ -->
 <div class="site-footer">
-<p>This website template is adapted from the <a href="https://nerfies.github.io">Nerfies</a> project page, which is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+<p>This website template is adapted from the</p>
+<p><a href="https://nerfies.github.io">Nerfies</a> project page, which is licensed under a</p>
+<p><a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
 </div>
 
 
-</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -686,7 +716,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div> <!-- /content -->
 <script>videojs(video_shortcode_videojs_video1);</script>
 <script>videojs(video_shortcode_videojs_video2);</script>
-<script>videojs(video_shortcode_videojs_video3);</script>
 
 
 
