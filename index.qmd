@@ -131,8 +131,8 @@ Here is the IRL driving replay from our Rosbag.
 ::: {.section-container}
 ## Obstacle Detection in Simulation {.section-title}
 
-::: {.result-card}
-![Obstacle Detection in simulation](static/images/highbay_lane.png){.highbay-lane-img}
+::: {.video-container}
+{{< video static/videos/obstacle_avoid.mov>}}
 :::
 
 ::: {.content-text}
